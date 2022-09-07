@@ -1,0 +1,47 @@
+.card{
+    width: 15rem;
+    margin: auto;
+    padding: auto;
+    
+  }
+  .card-holder{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #responsiveCard{
+  display: none;
+    }
+    #responsiveCard1{
+  display: none;
+    }
+    #responsiveCard2{
+  display: none;
+    }
+    .card-title{
+      font-size: small;
+    }
+    .card-text{
+      font-size: small;
+    }
+    .card{
+      width: 33%;
+      height: 50%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+  
+    .btn{
+  font-size: small ;
+    }
+  }

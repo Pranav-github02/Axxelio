@@ -1,0 +1,62 @@
+@media only screen and (min-width:768px) {
+    .head {
+        text-align: left;
+    }
+
+    .head .title {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    li {
+        width: 100%;
+        flex-shrink: 0;
+        max-width: 848px;
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .image {
+        width: 50%;
+        height: 100%;
+    }
+
+    .info {
+        width: 50%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        flex-shrink: 0;
+    }
+
+    .desc {
+        max-height: none;
+        line-height: 21px;
+    }
+
+    .footer {
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .stories {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    h3 {
+        font-size: 34px;
+        line-height: 48px;
+        min-height: 144px;
+        height: auto;
+    }
+}

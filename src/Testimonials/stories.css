@@ -1,0 +1,140 @@
+.stories {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.head {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.head .overline {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .15px;
+    margin-bottom: 8px;
+    color: #0f4089;
+    font-weight: 500;
+}
+
+.head .title {
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 600;
+    letter-spacing: 1.25px;
+}
+
+.head .subtitle {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: .5px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    overflow: visible;
+}
+
+li {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+}
+
+li:first-child {
+    padding-left: 16px;
+}
+
+.card {
+    width: 312px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, .1);
+    height: 100%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.body {
+    margin-bottom: 16px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.image {
+    width: 100%;
+    height: 208px;
+    background-color: rgba(0, 0, 0, .1);
+    background-size: cover;
+    background-position: top;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: .18px;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 16px;
+    font-weight: 600;
+    height: 86px;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: .25px;
+    color: rgba(0, 0, 0, .6);
+    max-height: 112px;
+    overflow: hidden;
+}
+
+.footer {
+    margin-top: 8px;
+}
+
+.usrnm {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .15px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.slider-btns {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-btns i{
+    width: 72px;
+    height: 72px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 4px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -4,6 +4,7 @@ import Hero from './Hero/hero.jsx'
 import Recommended_Courses from './Recommended_Courses/Recommended_Courses';
 import Stories from './Testimonials/Stories';
 import Navbar from './Navbar/Navbar.jsx';
+import Foot from "./Footer/foot";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Hero />
         <Recommended_Courses />
         <Stories />
+        <Foot/>
       </div>
     );
   }

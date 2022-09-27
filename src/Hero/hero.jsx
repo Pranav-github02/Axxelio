@@ -12,9 +12,6 @@ const Hero = () => {
                         instructors.
                     </p>
                 </div>
-                <div className="hero-img">
-                    <img id="img" src={naman} alt="rg" />
-                </div>
             </div>
 
         </>

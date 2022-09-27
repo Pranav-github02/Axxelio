@@ -11,26 +11,26 @@ const Foot = () => {
         <div className='row' style={{marginTop : "15px"}}>
           <div className='col-7 col-lg-3'>
             <div>
-            <img src={require("./footlogo.png")} style={{marginBottom: "10px"}} width="250" height="250" alt='jai ho'/>
+            <img src={require("./footlogo.png")} style={{marginBottom: "10px"}} width="210" height="210" alt='jai ho'/>
             </div>
             </div>
             <div className='col-7 col-lg-3'>
             <h2>Catogries</h2>
             <ul>
               <li>
-                <a href='asdsdf' style={{textDecoration: "none"}}>Design</a>
+                <a href='#' style={{textDecoration: "none"}}>Web Development</a>
               </li>
               <li>
-                <a href='asdsdf' style={{textDecoration: "none"}}>IT and Software</a>
+                <a href='#' style={{textDecoration: "none"}}>Business Development</a>
               </li>
               <li>
-                <a href='asdsdf' style={{textDecoration: "none"}}>AI and Machine Learning</a>
+                <a href='#' style={{textDecoration: "none"}}>Investment & Trading</a>
               </li>
               <li>
-                <a href='asdsdf' style={{textDecoration: "none"}}>Music</a>
+                <a href='#' style={{textDecoration: "none"}}>Leaderh30</a>
               </li>
               <li>
-                <a href='asdsdf' style={{textDecoration: "none"}}>Personal Development</a>
+                <a href='#' style={{textDecoration: "none"}}>Fitness</a>
               </li>
             </ul>
             </div>
@@ -55,23 +55,23 @@ const Foot = () => {
             <h3>Follow Us On</h3>
             <div className='row' style={{marginTop : "25px"}}>
               <div className='col-3 mx-auto'>
-                <a href='dfvrbytbn'>
-                <i class="fa fa-facebook-official" style={{fontSize: "35px",color: 'white'}}></i>
+                <a href='#'>
+                <i class="fa fa-facebook-official" style={{fontSize: "30px",color: 'white'}}></i>
                 </a>
               </div>
               <div className='col-3 mx-auto'>
-                <a href='www.google.com'>
-              < i className="fa fa-linkedin-square" style={{fontSize: "35px",color: 'white'}}></i>
+                <a href='#'>
+              < i className="fa fa-linkedin-square" style={{fontSize: "30px",color: 'white'}}></i>
               </a>
               </div>
               <div className='col-3 mx-auto'>
-                <a href='google.com'>
-                <i class="fa fa-instagram" style={{fontSize: "35px",color: 'white'}}></i>
+                <a href='#'>
+                <i class="fa fa-instagram" style={{fontSize: "30px",color: 'white'}}></i>
                 </a>
               </div>
               <div className='col-3 mx-auto'>
-                <a href='dfergv'>
-                <i class="fa fa-google" style={{fontSize: "35px",color: 'white'}}></i>
+                <a href='#'>
+                <i class="fa fa-google" style={{fontSize: "30px",color: 'white'}}></i>
                 </a>
               </div>
             </div>

@@ -1,9 +1,12 @@
 footer {
-    padding: 5rem 0;
+    padding: 1rem 0;
     background-color: black;
     color: #fff;
   }
-  
+ footer a{
+  text-decoration: none;
+  color: #fff;
+ } 
   footer h2 {
     color: #fff;
   }
@@ -25,13 +28,14 @@ footer {
   }
   
   /* mouse over link */
+  footer i:hover,
   footer a:hover {
-    color: blue;
+    color: #eed638;
   
   }
-  footer li:hover{
+  /* footer li:hover{
     text-decoration: underline;
-  }
+  } */
   
   footer .fontawesome-style {
     font-size: 1 rem;

@@ -6,7 +6,7 @@
 
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./hero.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./hero.jpg');
     background-size: cover;
     min-height: 80vh;
 }

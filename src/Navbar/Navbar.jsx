@@ -24,14 +24,14 @@ export default function Navbar(props) {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Catergories
+                                    Categories
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/">Category1</a></li>
-                                    <li><a className="dropdown-item" href="/">Category2</a></li>
-                                    <li><a className="dropdown-item" href="/">Category3</a></li>
-                                    <li><a className="dropdown-item" href="/">Category4</a></li>
-                                    <li><a className="dropdown-item" href="/">Category5</a></li>
+                                    <li><a className="dropdown-item" href="/">Web Development</a></li>
+                                    <li><a className="dropdown-item" href="/">Business Management</a></li>
+                                    <li><a className="dropdown-item" href="/">Investing & Trading</a></li>
+                                    <li><a className="dropdown-item" href="/">Leadership</a></li>
+                                    <li><a className="dropdown-item" href="/">Fitness</a></li>
                                 </ul>
                             </li>
                         </ul>

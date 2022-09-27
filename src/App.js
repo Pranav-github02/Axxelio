@@ -9,7 +9,7 @@ import Foot from "./Footer/foot";
 class App extends Component {
   render() {
     return (
-      <div className='container'>
+      <div>
         <Navbar />
         <Hero />
         <Recommended_Courses />

@@ -6,7 +6,7 @@ import './stories-responsive.css'
 
 const Stories = () => {
     return (
-        <div className='stories'>
+        <div className='stories container'>
             <div className='head'>
                 <p className='overline'>Encouraging everyone to learn with</p>
                 <h2 className='title'> Multiple success stories </h2>

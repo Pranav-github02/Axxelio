@@ -1,5 +1,4 @@
 import './hero.css'
-import naman from './naman.jpeg'
 
 const Hero = () => {
     return (

@@ -3,7 +3,7 @@ import {
 } from './Assets/index.js'
 import './stories.css'
 import './stories-responsive.css'
-// import './index.js'
+
 const Stories = () => {
     return (
         <div className='stories'>
@@ -12,9 +12,9 @@ const Stories = () => {
                 <h2 className='title'> Multiple success stories </h2>
                 <p className='subtitle'>Find out how our learners careers transformed after taking our courses.</p>
             </div>
-            <div className="row">
-                <ul>
-                    <li>
+            <div className="carousel slide" id="carouselControls" data-bs-ride="carousel" style={{ maxWidth: '800px' }}>
+                <div className='carousel-inner'>
+                    <div className="carousel-item active">
                         <div className='card'>
                             <div className='image' style={{ backgroundImage: `url(${ravi})` }}></div>
                             <div className='info'>
@@ -36,8 +36,8 @@ const Stories = () => {
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div className="carousel-item">
                         <div className='card'>
                             <div className='image' style={{ backgroundImage: `url(${nikhil})` }}></div>
                             <div className='info'>
@@ -58,8 +58,8 @@ const Stories = () => {
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div className="carousel-item">
                         <div className='card'>
                             <div className='image' style={{ backgroundImage: `url(${sonakshi})` }}></div>
                             <div className='info'>
@@ -80,8 +80,8 @@ const Stories = () => {
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div className="carousel-item">
                         <div className='card'>
                             <div className='image' style={{ backgroundImage: `url(${ronita})` }}></div>
                             <div className='info'>
@@ -102,12 +102,16 @@ const Stories = () => {
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <div className='slider-btns'>
-                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     )

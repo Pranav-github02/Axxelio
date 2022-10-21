@@ -1,0 +1,92 @@
+#rating{
+    color: goldenrod;
+    font-size: 85px;
+}
+.student{
+    margin: 10px;
+    padding: 10px;
+}
+.checked {
+    color: orange;
+  }
+ 
+.star{
+    font-size: 21px;
+}
+
+.course_Rating{
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 15px; background-color: orange;}
+  .bar-4 {width: 30%; height: 15px; background-color: orange;}
+  .bar-3 {width: 10%; height: 15px; background-color: orange;}
+  .bar-2 {width: 4%; height: 15px; background-color: orange;}
+  .bar-1 {width: 15%; height: 15px; background-color: orange;}
+  
+.heading{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.user{
+  font-size: 60px;
+}
+.new-line {
+  white-space: pre-line;
+}
+.ratingTime{
+  display: flex;
+  flex-direction: row;
+}
+  
+
+
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 800px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+    .flexApply{
+        display: flex;
+        flex-direction: column;
+    }
+  }

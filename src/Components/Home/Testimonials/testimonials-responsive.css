@@ -35,7 +35,7 @@
         flex-shrink: 0;
     }
 
-    .stories .desc {
+    .desc {
         max-height: none;
         line-height: 21px;
     }

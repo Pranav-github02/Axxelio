@@ -1,10 +1,10 @@
 import {
     logo1, logo2, logo3, logo4, ravi, nikhil, ronita, sonakshi
 } from './Assets/index.js'
-import './stories.css'
-import './stories-responsive.css'
+import './testimonials.css'
+import './testimonials-responsive.css'
 
-const Stories = () => {
+const Testimonials = () => {
     return (
         <div className='stories container'>
             <div className='head'>
@@ -12,7 +12,7 @@ const Stories = () => {
                 <h2 className='title'> Multiple success stories </h2>
                 <p className='subtitle'>Find out how our learners careers transformed after taking our courses.</p>
             </div>
-            <div className="carousel slide" id="carouselControls" data-bs-ride="carousel" style={{ maxWidth: '800px' }}>
+            <div className="carousel slide" id="carouselControls" data-bs-ride="carousel" style={{maxWidth:'800px'}}>
                 <div className='carousel-inner'>
                     <div className="carousel-item active">
                         <div className='card'>
@@ -66,9 +66,9 @@ const Stories = () => {
                                 <div className='body'>
                                     <h3>Balancing upskilling and motherhood</h3>
                                     <p className='desc'>
-                                        I wasn't sure if I could upskill myself with a 4-month old daughter
-                                        and no technical experience. Axxelio's faculty gave me all
-                                        the support I needed to learn, and would readily clear any doubts
+                                        I wasn't sure if I codivd upskill myself with a 4-month old daughter
+                                        and no technical experience. Axxelio's facdivty gave me all
+                                        the support I needed to learn, and wodivd readily clear any doubts
                                         I had. I was able to make the transition from a BPO job to the role
                                         of a Data Scientist at Genpact, with my salary growing 5X.
                                     </p>
@@ -106,6 +106,7 @@ const Stories = () => {
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    {/* <i className="fa-sharp fa-solid fa-arrow-left"></i> */}
                     <span className="visually-hidden">Previous</span>
                 </button>
                 <button className="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
@@ -116,4 +117,4 @@ const Stories = () => {
         </div>
     )
 }
-export default Stories;
+export default Testimonials;

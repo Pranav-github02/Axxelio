@@ -1,6 +1,6 @@
 import React from 'react';
 import './foot.css';
-import footlogo from './footlogo.png';
+// import footlogo from './footlogo.png';
 const Foot = () => {
   return (
     <>
@@ -11,11 +11,11 @@ const Foot = () => {
               <div className='row' style={{ marginTop: "15px" }}>
                 <div className='col-7 col-lg-3'>
                   <div>
-                    <img src={require("./footlogo.png")} style={{ marginBottom: "10px" }} width="210" height="210" alt='jai ho' />
+                    <img src={require("./footlogo.png")} style={{ marginBottom: "10px" }} width="210" height="210" alt='Axxelio' />
                   </div>
                 </div>
                 <div className='col-7 col-lg-3'>
-                  <h2>Categories</h2>
+                  <h3>Categories</h3>
                   <ul>
                     <li>
                       <a href='#' style={{ textDecoration: "none" }}>Web Development</a>
@@ -24,7 +24,7 @@ const Foot = () => {
                       <a href='#' style={{ textDecoration: "none" }}>Business Management</a>
                     </li>
                     <li>
-                      <a href='#' style={{ textDecoration: "none" }}>Investment & Trading</a>
+                      <a href='#' style={{ textDecoration: "none" }}>Investing & Trading</a>
                     </li>
                     <li>
                       <a href='#' style={{ textDecoration: "none" }}>Leadership</a>
@@ -35,19 +35,19 @@ const Foot = () => {
                   </ul>
                 </div>
                 <div className='col-7 col-lg-3'>
-                  <h2>Company</h2>
+                  <h3>Company</h3>
                   <ul>
                     <li>
-                      <a href='asdsdf' style={{ textDecoration: "none" }}>About Us</a>
+                      <a href='#' style={{ textDecoration: "none" }}>About Us</a>
                     </li>
                     <li>
-                      <a href='asdsdf' style={{ textDecoration: "none" }}>Home</a>
+                      <a href='#' style={{ textDecoration: "none" }}>Home</a>
                     </li>
                     <li>
-                      <a href='asdsdf' style={{ textDecoration: 'none' }}>Terms & conditions</a>
+                      <a href='#' style={{ textDecoration: 'none' }}>Terms & conditions</a>
                     </li>
                     <li>
-                      <a href='asdsdf' style={{ textDecoration: 'none' }}>Contact Us</a>
+                      <a href='#' style={{ textDecoration: 'none' }}>Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -56,7 +56,7 @@ const Foot = () => {
                   <div className='row' style={{ marginTop: "25px" }}>
                     <div className='col-3 mx-auto'>
                       <a href='#'>
-                        <i class="fa fa-facebook-official" style={{ fontSize: "30px", color: 'white' }}></i>
+                        <i className="fa fa-facebook-official" style={{ fontSize: "30px", color: 'white' }}></i>
                       </a>
                     </div>
                     <div className='col-3 mx-auto'>
@@ -66,20 +66,20 @@ const Foot = () => {
                     </div>
                     <div className='col-3 mx-auto'>
                       <a href='#'>
-                        <i class="fa fa-instagram" style={{ fontSize: "30px", color: 'white' }}></i>
+                        <i className="fa fa-instagram" style={{ fontSize: "30px", color: 'white' }}></i>
                       </a>
                     </div>
                     <div className='col-3 mx-auto'>
                       <a href='#'>
-                        <i class="fa fa-google" style={{ fontSize: "30px", color: 'white' }}></i>
+                        <i className="fa fa-google" style={{ fontSize: "30px", color: 'white' }}></i>
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-3" style={{ marginTop: '20px' }}>
+              <div className="col-xs-3" style={{ marginTop: '20px' }}>
                 <form action="">
-                  <label for="ex2">SUBSCRIBE  </label>
+                  <label htmlFor="ex2">SUBSCRIBE</label>
                   <input className="email-address" style={{ marginLeft: "10px" }} type="Email" placeholder='Enter your Email Here' />
                 </form>
               </div>

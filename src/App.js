@@ -1,25 +1,22 @@
 import { Component } from 'react';
 import './App.css';
-import Hero from './Hero/hero.jsx'
-import Recommended_Courses from './Recommended_Courses/Recommended_Courses';
-import Stories from './Testimonials/Stories';
-import Navbar from './Navbar/Navbar.jsx';
-import Foot from "./Footer/foot";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Navbar from './Components/Navbar/Navbar.jsx';
+import Home from './Components/Home/home';
+import { Category } from './Components/Categories/Category';
+import Foot from "./Components/Home/Footer/foot";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <Hero />
-        <Recommended_Courses />
-        <Stories />
-        <Foot/>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:type" element={<Category />} />
+      </Routes>
+      <Foot />
+    </div>
+  );
 }
 
 export default App;
-
-

@@ -5,13 +5,17 @@
 .hero-section {
 
     display: flex;
+    /* background-color:goldenrod ; */
     justify-content: space-around;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./hero.jpeg');
     background-size: cover;
     min-height: 80vh;
 }
 
 .text {
+    /* color: rgb(233, 29, 29); */
+    /* color: #f1da3b; */
+    /* color: #eed638;*/
     color: goldenrod;
     font-size: 50px;
     text-align: center;
@@ -35,6 +39,10 @@
 }
 
 .hero-section-content {
+    /* height: 350px;
+    width: 400px;
+    margin-top: 80px; */
+
     position: absolute;
     top: 50%;
     left: 50%;

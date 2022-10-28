@@ -3,7 +3,6 @@ import './Recommended_Course.css';
 import Card from "./Card";
 import { PureComponent } from 'react';
 
-	
 let url = `https://www.udemy.com/api-2.0/courses/?search=cyber&language=en`
 let url1 = `https://www.udemy.com/api-2.0/courses/?search=graphic%20design&language=en`
 let url2 = `https://www.udemy.com/api-2.0/courses/?search=web%20development&language=en`
@@ -12,7 +11,7 @@ let axiosHeaders = {
     "Accept": "application/json, text/plain, */*",
     "Authorization": "Basic Vzc4N0J2SWNhWFFDNW9Jd0tTRWw0YWVTQ3Ixd2tPOGJ5ZTREc3VMWjpzRWkzSHd2b2ZNazlSdFFnTVV0Y1VuSmZEUnlTeXN0UEJScXRBMEF5Y2JQNDNabXRHQzJMNjg4bXVGUU01VUh0Y3NBQ3ROZDZZSzlDNFB5eE94R05sZlFhbU5JZE0zY0xLRDZtUWJtZDFGV290YVdlMW5MU1hMVDl3R1pxRm52Sg==",
     "Content-Type": "application/json; charset=utf-8",
-    "Access-Control-Allow-Origin": "*"
+
   }
 }
 class Recommended_Courses extends PureComponent {
@@ -23,19 +22,22 @@ class Recommended_Courses extends PureComponent {
       graphic: null,
       web: null,
       // selectedCourseID: null
-    }}
-    componentDidMount() {
-      axios.get(url, axiosHeaders)
-        .then(response => {
-          this.setState({ cyber: response.data.results })
-        })
-        .catch(error => console.log(error))
-        axios.get(url1, axiosHeaders)
+    }
+  }
+  componentDidMount() {
+    axios.get(url, axiosHeaders)
+      .then(response => {
+        this.setState({ cyber: response.data.results })
+      })
+      .catch(error => console.log(error))
+
+    axios.get(url1, axiosHeaders)
       .then(response => {
         this.setState({ graphic: response.data.results })
       })
       .catch(error => console.log(error))
-      axios.get(url2, axiosHeaders)
+
+    axios.get(url2, axiosHeaders)
       .then(response => {
         this.setState({ web: response.data.results })
       })
@@ -46,7 +48,7 @@ class Recommended_Courses extends PureComponent {
     if (this.state.cyber != null && this.state.graphic != null && this.state.web != null) {
       carousel = (<div id="carouselExampleControls" className="carousel carousel-dark slide" data-bs-touch="false">
         <div className="carousel-inner">
-        <div className="carousel-item active">
+          <div className="carousel-item active">
             <div className="card-holder" >
               <Card index={0} course={this.state.graphic} />
               <Card index={1} course={this.state.cyber} />
@@ -56,7 +58,6 @@ class Recommended_Courses extends PureComponent {
           </div>
           <div className="carousel-item">
             <div className="card-holder">
-             
               <Card index={4} course={this.state.cyber} />
               <Card index={5} course={this.state.graphic} />
               <Card index={6} course={this.state.graphic} />
@@ -80,16 +81,17 @@ class Recommended_Courses extends PureComponent {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>)}
-      return (
-        <div className="App">
+      </div>)
+    }
+    return (
+      <div className="App">
         <br /><br />
         <h1>Recommended Courses</h1>
         {carousel}
       </div>
 
-      );}}
-      export default Recommended_Courses;
-            
+    );
+  }
+}
 
-  
+export default Recommended_Courses;

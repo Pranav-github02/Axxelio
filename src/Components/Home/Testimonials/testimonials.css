@@ -1,5 +1,6 @@
 .stories {
     display: flex;
+    /* flex-direction: column; */
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -45,15 +46,18 @@
 }
 
 .stories .carousel-inner {
+    /* list-style: none; */
     display: flex;
+    /* overflow: visible; */
 }
 
 .stories .carousel-item {
     padding-left: 8px;
     padding-right: 8px;
+    /* display: flex; */
 }
 
-.stories .carousel-item :first-child {
+.stories .carousel-item:first-child {
     padding-left: 16px;
 }
 
@@ -125,8 +129,7 @@
     display: flex;
     justify-content: space-between;
 }
-
-.slider-btns i {
+.slider-btns i{
     width: 72px;
     height: 72px;
     background-color: #fff;

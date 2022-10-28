@@ -13,8 +13,8 @@ const CourseTile = ({ title, image, headline }) => {
                     display: "flex",
                     justifyContent: 'flex-start'
                 }}>
-                    <h5 style={{ margin: "0%" }}>4.3</h5>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <h5 style={{ margin: "0" }}>4.3</h5>
+                    <div style={{marginLeft:"5px"}}><i className="fa-solid fa-star text-warning"></i><i className="fa-solid fa-star text-warning"></i><i className="fa-solid fa-star text-warning"></i><i className="fa-solid fa-star text-warning"></i></div>
                 </div>
             </div>
         </div>

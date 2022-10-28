@@ -3,15 +3,12 @@ import { PureComponent } from 'react'
 import CourseTile from './CourseTile'
 let axiosHeaders = {
     headers: {
-        "Origin":"https://www.udemy.com/",
         "Access-Control-Allow-Origin": "*",
         "Accept": "application/json, text/plain, */*",
         "Authorization": "Basic Vzc4N0J2SWNhWFFDNW9Jd0tTRWw0YWVTQ3Ixd2tPOGJ5ZTREc3VMWjpzRWkzSHd2b2ZNazlSdFFnTVV0Y1VuSmZEUnlTeXN0UEJScXRBMEF5Y2JQNDNabXRHQzJMNjg4bXVGUU01VUh0Y3NBQ3ROZDZZSzlDNFB5eE94R05sZlFhbU5JZE0zY0xLRDZtUWJtZDFGV290YVdlMW5MU1hMVDl3R1pxRm52Sg==",
         "Content-Type": "application/json; charset=utf-8",
-        
     }
 }
-// let url = `https://www.udemy.com/api-2.0/courses/?page_size=16&search=Web&language=en`
 class Categories extends PureComponent {
     constructor(props) {
         super(props)
@@ -31,12 +28,8 @@ class Categories extends PureComponent {
         }
     }
     render() {
-        console.log(this.state.courses);
-        console.log(this.url);
         let courses = <p style={{ textAlign: 'center' }}>Loading Courses...</p>
         if (this.state.courses != null) {
-            
-            // console.log(this.state.courses[0].title);
             courses = (
                 <>
                     {
@@ -49,16 +42,20 @@ class Categories extends PureComponent {
                             />)
                     }
                 </>
-
             )
         }
         return (
-
             <div className="container" style={{
-                display:'flex',
-                flexWrap:'wrap',
-                justifyContent:'space-around'
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'space-around'
             }}>
+                <h3 style={{
+                    width: "100%",
+                    margin: "50px",
+                    fontWeight: "700",
+                    fontSize: "36px"
+                }}><i>{this.props.props}</i></h3>
                 {courses}
             </div>
         )

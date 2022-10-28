@@ -22,8 +22,8 @@ export default function Navbar(props) {
                     </div>
 
                     <div className="d-flex align-items-center">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <NavLink to="/">Home</NavLink>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{ display: "contents" }}>
+                            <li><NavLink to="/" style={{ textDecoration: "none", marginRight: "10px", color: "black" }}>Home</NavLink></li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href='#' role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Catergories

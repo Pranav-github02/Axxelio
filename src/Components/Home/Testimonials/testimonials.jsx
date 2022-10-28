@@ -104,13 +104,30 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    {/* <i className="fa-sharp fa-solid fa-arrow-left"></i> */}
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev" style={{
+                    position: "relative",
+                    bottom: "100%",
+                    top: "auto",
+                    color:"black",
+                    boxShadow: "0 0 16px 4px rgb(0 0 0 / 10%)",
+                    width:"72px",
+                    height:"72px",
+                    borderRadius:"50%",
+                    marginTop:"15px"
+                }}>
+                    <span className="carousel-control-prev-icon text-decoration-none" aria-hidden="true"><i className="fa-sharp fa-solid fa-arrow-left" style={{ fontSize: "30px" }}></i></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next" style={{
+                    bottom: "100%",
+                    top: "auto",
+                    color:"black",
+                    boxShadow: "0 0 16px 4px rgb(0 0 0 / 10%)",
+                    width:"72px",
+                    height:"72px",
+                    borderRadius:"50%"
+                }}>
+                    <span className="carousel-control-next-icon" aria-hidden="true"><i className="fa-sharp fa-solid fa-arrow-right" style={{ fontSize: "30px" }}></i></span>
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>

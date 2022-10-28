@@ -84,7 +84,7 @@ class Recommended_Courses extends PureComponent {
       </div>)
     }
     return (
-      <div className="App">
+      <div className="App" style={{marginBottom:"50px"}}>
         <br /><br />
         <h1>Recommended Courses</h1>
         {carousel}
